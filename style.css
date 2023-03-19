@@ -72,7 +72,7 @@ button.menu, button.close {
 
 nav {
     position: absolute;
-    background-color: var(--deep-theme-color);
+    background-color: var(--menu-color);
     width: 100%;
     max-width: 68rem;
     border-radius: 0px 0px 20px 20px;
@@ -119,15 +119,63 @@ li:hover {
     visibility: hidden;
 }
 
-/*
-espaço para a funcionalidade do menu
-*/
+.opened {
+    transform: translateY(38rem);
+    transition: 700ms;
+}
+
+/*==========home==========*/
+
+#home {
+    background: var(--primary-color);
+    color: var(--text-menu-color);
+    padding-bottom: 4.8rem;
+}
 
 .friends img {
     margin-right: -1.1rem;
     border-radius: 50%;
-    border: 3px solid var(--theme-color);
+    border: 3px solid var(--primary-color);
     width: 2.4rem;
     height: 2.4rem;
+}
 
+.pre-title {
+    margin: 5.2rem 2rem 3.5rem;
+}
+
+.main-content h1 {
+    max-width: 27rem;
+    margin: 0 2rem;
+}
+
+.main-subtitle {
+    display: none;
+}
+
+.callAction {
+    margin-top: 3.3rem;
+    width: 100%;
+    max-width: 68rem;
+    height: 28rem;
+    display: grid;
+    grid-auto-flow: column;
+    place-items: end center;
+    background-image: url(./asstes/callAction-mobile.png);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.callAction button {
+    position: absolute;
+    width: 23.9rem;
+    height: 5.5rem;  
+    background: #FFFFFF;
+    border-radius: 9px;
+    margin-bottom: 2rem;
+    font-weight: 800;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    color: var(--text-primary);
 }
