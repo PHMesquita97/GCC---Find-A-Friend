@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 62.5%;
+    --menu-color: hsl(358, 75%, 58%);
+    --primary-color: hsl(358, 85%, 63%);
+    --text-primary: hsl(209, 77%, 23%);
+    --text-menu-color: hsl(0, 0%, 100%);
+}
+
+body, button {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+section {    
+    margin: 0 auto;
+    max-width: 68rem;    
+    position: relative;
+}
