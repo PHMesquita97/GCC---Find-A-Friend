@@ -213,6 +213,8 @@ li:hover {
     border: 1px solid var(--cards-border-about);
     border-radius: 2rem;
     background: var(--cards-bg-about);
+
+    margin: 0 3rem;
 }
 
 #about .card img{
@@ -231,16 +233,16 @@ li:hover {
 }
 
 .card1{
-    width: 28rem;
-    height: 19.7rem;
+    max-width: 28rem;
+    max-height: 19.7rem;
 }
 .card2{
-    width: 28rem;
-    height: 19.7rem;
+    max-width: 28rem;
+    max-height: 19.7rem;
 }
-.card-bottom{
-    width: 28rem;
-    height: 19.7rem;
+.card3{
+    max-width: 28rem;
+    max-height: 19.7rem;
 }
 
 
@@ -383,19 +385,89 @@ li:hover {
     }
 
     #about{
+        max-width: 1080px;
+        margin: 0 auto;
+
         display: grid;
-        grid-template-areas: "appBg cards-wrapper";
+        grid-template-areas: 
+        "appBg cards-wrapper";
+        grid-template-columns: 1fr 1fr;
+        gap:1rem;
+
+        border: 10px solid green;
+        
     }
 
     #about .appBg{
         grid-area: appBg;
+        overflow: hidden;
+        
+        background: linear-gradient(180deg, #FDECED 0%, rgba(253, 236, 237, 0) 100%);
+        border-radius: 20px;
+        margin-top: 2.7rem;
+        margin-left: 2.7rem;
+    }
+    #about .appBg img{
+        max-width: 100rem;
     }
 
     #about .cards-wrapper{
         grid-area: cards-wrapper;
+        margin-bottom: 7rem;
     }
 
+    #about .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        grid-template-areas:
+          "card1 card2"
+          "card3 card3";
+
+        max-width: 108rem;
+        
+    }
     
+    #about .card{
+        max-width: 100vw;
+
+        border: 1px solid var(--cards-border-about);
+        border-radius: 2rem;
+        background: var(--cards-bg-about);
+
+        margin: 0 1rem;
+        
+    }
+
+    .card1 {
+        grid-area: card1;
+        max-width: 28rem;
+        max-height: 19.7rem;
+    }
+      
+    .card2 {
+        grid-area: card2;
+        max-width: 28rem;
+        max-height: 19.7rem;
+    }
+
+    .card3{
+        max-width: 59.2rem;
+        max-height: 19.7rem;
+        grid-area: card3;
+    }
+    #about .card p{
+        padding: 0 1rem 1rem;
+    
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: -0.02em;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 110%;
+        
+    }
+
 }
 
 /*==========DESKTOP==========*/
