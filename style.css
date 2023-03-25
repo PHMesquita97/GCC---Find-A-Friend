@@ -382,6 +382,19 @@ li:hover {
         display: flex;
     }
 
+    #about{
+        display: grid;
+        grid-template-areas: "appBg cards-wrapper";
+    }
+
+    #about .appBg{
+        grid-area: appBg;
+    }
+
+    #about .cards-wrapper{
+        grid-area: cards-wrapper;
+    }
+
     
 }
 
