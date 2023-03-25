@@ -199,6 +199,10 @@ li:hover {
     color: var(--text-primary);
 }
 
+#about .cards-wrapper .br-desktop{
+    display: none;
+}
+
 #about .cards{
     
     margin-top: 2rem;
@@ -383,6 +387,12 @@ li:hover {
     .appBg .about-desktop{
         display: flex;
     }
+    #about .cards-wrapper .br-mobile{
+        display: none;
+    }
+    #about .cards-wrapper .br-desktop{
+        display: block;
+    }
 
     #about{
         max-width: 1080px;
@@ -466,6 +476,10 @@ li:hover {
         font-size: 1.4rem;
         line-height: 110%;
         
+    }
+
+    #about .cards-wrapper h1{
+        font-size: 4.5rem;
     }
 
 }
@@ -570,6 +584,19 @@ li:hover {
 
     .callAction{
         top:30px
+    }
+    /*==========ABOUT==========*/
+    #about{
+        max-width: 144rem;
+        margin: 0 auto;
+        border: 10px solid green;        
+    }
+    
+    #about .cards-wrapper h1{
+        font-size: 4.8rem;
+        line-height: 110%;
+        letter-spacing: -0.02em;
+        align-self: flex-start;
     }
 
 }
